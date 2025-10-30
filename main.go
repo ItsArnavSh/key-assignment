@@ -1,13 +1,19 @@
 package main
 
 import (
+	"stack/src/core/codegen"
 	"stack/src/server"
+
+	"github.com/spf13/viper"
 )
 
 func main() {
-	//codegen.GenerateLargeCodebase()
+	viper.AddConfigPath(".")
+	viper.SetConfigType("yaml")
+	viper.SetConfigName("config")
+	if viper.GetBool("generate") {
+		codegen.GenerateLargeCodebase()
+	}
 	server := server.NewServer()
-	server.CurrentURL = "https://github.com/go-gorm/gorm/blob/master/clause/clause.go"
-	server.Scan("gen")
-
+	server.ScanCodebase(viper.GetString("target_loc"), viper.GetString("target_url"))
 }

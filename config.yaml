@@ -1,0 +1,3 @@
+target_url: "https://github.com/go-gorm/gorm/blob/master/clause/clause.go"
+target_loc: "gen"
+generate: true

@@ -99,3 +99,7 @@ func (s *Server) ScanFile(path string) error {
 
 	return nil
 }
+func (s *Server) ScanCodebase(loc string, url string) {
+	s.CurrentURL = url
+	s.Scan(loc)
+}
