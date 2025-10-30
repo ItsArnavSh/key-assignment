@@ -1,0 +1,72 @@
+[
+  {
+    "provider": "AWS",
+    "token_type": "Access Key",
+    "value": "AKIAIOSFODNN7EXAMPLE1",
+    "owner": "john.doe",
+    "description": "Prod AWS key for John's project"
+  },
+  {
+    "provider": "AWS",
+    "token_type": "Secret Access Key",
+    "value": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY1",
+    "owner": "john.doe",
+    "description": "Secret key linked to AWS Access Key 1"
+  },
+  {
+    "provider": "Azure",
+    "token_type": "Service Principal Token",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9...EXAMPLE2",
+    "owner": "alice.smith",
+    "description": "Azure AD token for app registration 2"
+  },
+  {
+    "provider": "Azure",
+    "token_type": "Client Secret",
+    "value": "abc123-client-secret-example-xyz456",
+    "owner": "alice.smith",
+    "description": "Client secret for app registration 2"
+  },
+  {
+    "provider": "GitHub",
+    "token_type": "Personal Access Token",
+    "value": "ghp_16characterslongtokenhere1",
+    "owner": "bob.jones",
+    "description": "GitHub PAT for CI/CD pipeline 1"
+  },
+  {
+    "provider": "GitHub",
+    "token_type": "OAuth Token",
+    "value": "oauth2accesstoken-example-abcdef123456",
+    "owner": "bob.jones",
+    "description": "GitHub OAuth token for user access"
+  },
+  {
+    "provider": "GCP",
+    "token_type": "Service Account Key",
+    "value": "ya29.a0AfH6SMEXAMPLEKEY3",
+    "owner": "carol.admin",
+    "description": "GCP service account token for analytics"
+  },
+  {
+    "provider": "GCP",
+    "token_type": "OAuth2 Refresh Token",
+    "value": "1//0gEXAMPLEREFRESHTOKENabc123",
+    "owner": "carol.admin",
+    "description": "GCP OAuth2 refresh token"
+  },
+  {
+    "provider": "AWS",
+    "token_type": "Access Key",
+    "value": "AKIAIOSFODNN7EXAMPLE2",
+    "owner": "emma.white",
+    "description": "Dev AWS key for Emma's test environment"
+  },
+  {
+    "provider": "GitHub",
+    "token_type": "Personal Access Token",
+    "value": "ghp_16characterslongtokenhere2",
+    "owner": "dave.miller",
+    "description": "GitHub PAT for automation scripts"
+  }
+]
